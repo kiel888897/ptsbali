@@ -5,16 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Undangan Bona Taon PTS 2026</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+
+    <!-- Theme color for mobile browser -->
+    <meta name="theme-color" content="#b91c1c" />
+
+    <!-- SEO & Social -->
+    <meta name="description" content="Undangan digital resmi Pesta Bona Taon Punguan Tuan Sihubil se-Bali tahun 2026. Minggu, 15 Februari 2026 di Denpasar." />
+    <meta name="keywords" content="Bona Taon, Batak, Undangan, PTS Bali, Pesta Adat, Keluarga Batak, Denpasar" />
+    <meta property="og:title" content="Undangan Bona Taon PTS 2026" />
+    <meta property="og:description" content="Mari bersama menghadiri Pesta Bona Taon Punguan Tuan Sihubil se-Bali | 15 Februari 2026 di Denpasar." />
+    <meta property="og:image" content="https://https://ptsbali.online//assets/images/pinompar.png" />
+    <meta property="og:url" content="https://https://ptsbali.online//" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/a2d9d6c11f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;400;600&display=swap"
-        rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Custom -->
     <link href="style.css" rel="stylesheet" />
 </head>
+
 
 <body class="bg-gray-100">
     <!-- Background Music -->
