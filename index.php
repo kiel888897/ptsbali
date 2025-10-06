@@ -91,7 +91,7 @@
             <img src="assets/images/pinompar.png" alt="Logo Punguan" class="h-40 mx-auto mb-4" />
 
             <h2 class="text-2xl md:text-3xl font-semibold mb-2">Punguan Tuan Sihubil se-Bali</h2>
-            <p class="text-lg md:text-xl mb-6 italic">Sabtu–Minggu, 15–16 Maret 2026</p>
+            <p class="text-lg md:text-xl mb-6 italic">Minggu, 15 Februari 2026</p>
 
             <!-- Save The Date Button -->
             <a
@@ -186,10 +186,10 @@
                 class="flex justify-center gap-4 mb-6 text-lg font-semibold text-yellow-200 text-shadow"></div>
 
             <!-- Event Info -->
-            <p class="mb-2 text-lg text-white text-shadow">📅 Tanggal: 20–21 Desember 2026</p>
+            <p class="mb-2 text-lg text-white text-shadow">📅 Tanggal: 15 Februari 2026</p>
             <p class="mb-2 text-lg text-white text-shadow">⏰ Pukul: 10.00 WITA – Selesai</p>
             <p class="mb-6 text-lg text-white text-shadow">
-                📍 Lokasi: Wisma PLN Bedugul, Candikuning, Baturiti, Tabanan Regency, Bali 82191
+                📍 Lokasi: alamat, Denpasar, Bali 82191
             </p>
 
             <a
@@ -460,7 +460,7 @@
         }
         // Countdown
         const countdown = document.getElementById("countdown");
-        const eventDate = new Date("Dec 20, 2025 17:00:00").getTime();
+        const eventDate = new Date("Feb 15, 2026 10:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();
             const distance = eventDate - now;
