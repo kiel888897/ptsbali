@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gathering Batak 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow: hidden; /* Awalnya disable scroll */
+      }
+      .bg-ulos {
+        background-image: url("assets/images/back.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      /* Marquee */
+      .marquee {
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+      }
+      .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 12s linear infinite;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      /* Balon animasi */
+      .balloon {
+        position: absolute;
+        bottom: -100px;
+        width: 30px;
+        height: 40px;
+        background: rgba(255, 0, 0, 0.6);
+        border-radius: 50%;
+        animation: float 8s linear infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-120vh) scale(1.2);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+      <source src="assets/music/sound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex flex-col items-center justify-center bg-ulos relative overflow-hidden">
+      <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div class="relative text-center text-white z-10 px-4" data-aos="zoom-in">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Gathering Keluarga Batak 2025</h1>
+        <p class="text-lg md:text-xl mb-6 italic">
+          "Horas! Mari kita bersatu, merajut tali kebersamaan dalam budaya Batak."
+        </p>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="flex justify-center gap-4 mb-6 text-lg font-semibold"></div>
+
+        <!-- Button -->
+        <button
+          onclick="openInvitation()"
+          class="bg-gradient-to-r from-red-600 to-yellow-500 animate-pulse text-white px-8 py-3 rounded-full text-lg shadow-xl hover:scale-110 transition"
+        >
+          🎉 Buka Undangan 🎉
+        </button>
+      </div>
+      <!-- Marquee -->
+      <div class="absolute bottom-0 w-full bg-red-700 text-white font-bold text-lg marquee">
+        <span>
+          🎶 Horas! Selamat datang di Gathering Keluarga Batak 2025 • Mari kita rayakan kebersamaan dengan penuh
+          sukacita • 🎶
+        </span>
+      </div>
+      <!-- Balon -->
+      <div id="balloons"></div>
+      <!-- Confetti Canvas -->
+      <canvas id="confetti-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+    </section>
+
+    <!-- Detail Section -->
+    <section id="detail" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-red-700 mb-6">Detail Acara</h2>
+        <p class="mb-2 text-lg">📅 Tanggal: 20 Desember 2025</p>
+        <p class="mb-2 text-lg">⏰ Waktu: 17.00 - Selesai</p>
+        <p class="mb-6 text-lg">📍 Lokasi: Medan International Convention Center</p>
+        <div class="w-full h-64">
+          <iframe
+            class="w-full h-full rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!..."
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-red-700 mb-8">Galeri</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <img
+            src="https://source.unsplash.com/400x300/?family"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+          <img
+            src="https://source.unsplash.com/400x300/?party"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+          <img
+            src="https://source.unsplash.com/400x300/?culture"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+          <img
+            src="https://source.unsplash.com/400x300/?friends"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+          <img
+            src="https://source.unsplash.com/400x300/?dance"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+          <img
+            src="https://source.unsplash.com/400x300/?music"
+            class="rounded-lg shadow-lg hover:scale-105 transition"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-red-700 mb-6">Konfirmasi Kehadiran</h2>
+        <form class="max-w-md mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
+          <input type="text" placeholder="Nama" class="w-full p-3 mb-4 rounded border" />
+          <input type="number" placeholder="Jumlah Tamu" class="w-full p-3 mb-4 rounded border" />
+          <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white p-3 rounded font-bold">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-red-700 text-white text-center">
+      <p>&copy; 2025 Gathering Keluarga Batak. Dibuat dengan ❤️</p>
+    </footer>
+
+    <!-- AOS & Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+
+      const music = document.getElementById("bg-music");
+      const body = document.body;
+
+      function openInvitation() {
+        music.play();
+        body.style.overflow = "auto"; // aktifkan scroll
+        launchConfetti(); // jalankan confetti
+      }
+
+      // Countdown Timer
+      const countdown = document.getElementById("countdown");
+      const eventDate = new Date("Dec 20, 2025 17:00:00").getTime();
+
+      setInterval(() => {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        if (distance < 0) {
+          countdown.innerHTML = "🎉 Acara Sedang Berlangsung 🎉";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `
+        <div>${days} <span class="block text-sm">Hari</span></div>
+        <div>${hours} <span class="block text-sm">Jam</span></div>
+        <div>${minutes} <span class="block text-sm">Menit</span></div>
+        <div>${seconds} <span class="block text-sm">Detik</span></div>
+      `;
+      }, 1000);
+
+      // Balon animasi
+      function createBalloon() {
+        const balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.left = Math.random() * window.innerWidth + "px";
+        balloon.style.background = `hsl(${Math.random() * 360}, 70%, 60%)`;
+        balloon.style.animationDuration = 6 + Math.random() * 5 + "s";
+        document.getElementById("balloons").appendChild(balloon);
+
+        setTimeout(() => {
+          balloon.remove();
+        }, 8000);
+      }
+      setInterval(createBalloon, 800);
+
+      // 🎊 Confetti Animation
+      const confettiCanvas = document.getElementById("confetti-canvas");
+      const ctx = confettiCanvas.getContext("2d");
+      let confettiParticles = [];
+
+      function resizeCanvas() {
+        confettiCanvas.width = window.innerWidth;
+        confettiCanvas.height = window.innerHeight;
+      }
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+
+      function ConfettiParticle() {
+        this.x = Math.random() * confettiCanvas.width;
+        this.y = Math.random() * confettiCanvas.height - confettiCanvas.height;
+        this.r = Math.random() * 6 + 4;
+        this.d = Math.random() * confettiCanvas.height;
+        this.color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        this.tilt = Math.floor(Math.random() * 10) - 10;
+        this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+        this.tiltAngle = 0;
+
+        this.draw = function () {
+          ctx.beginPath();
+          ctx.lineWidth = this.r / 2;
+          ctx.strokeStyle = this.color;
+          ctx.moveTo(this.x + this.tilt + this.r / 4, this.y);
+          ctx.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 4);
+          ctx.stroke();
+        };
+      }
+
+      function launchConfetti() {
+        confettiParticles = [];
+        for (let i = 0; i < 150; i++) {
+          confettiParticles.push(new ConfettiParticle());
+        }
+        requestAnimationFrame(updateConfetti);
+        setTimeout(() => (confettiParticles = []), 5000); // stop after 5s
+      }
+
+      function updateConfetti() {
+        ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        confettiParticles.forEach((p) => {
+          p.tiltAngle += p.tiltAngleIncremental;
+          p.y += (Math.cos(p.d) + 3 + p.r / 2) / 2;
+          p.x += Math.sin(p.tiltAngle);
+          p.draw();
+        });
+        if (confettiParticles.length > 0) requestAnimationFrame(updateConfetti);
+      }
+    </script>
+  </body>
+</html>

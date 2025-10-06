@@ -1,0 +1,183 @@
+  html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: linear-gradient(to bottom right, #7b1fa2, #e91e63, #ff9800);
+        font-family: "Josefin Sans", sans-serif;
+        overflow: hidden; /* awalnya disable scroll */
+      }
+      h1,
+      h2,
+      .title {
+        font-family: "Dancing Script", cursive;
+      }
+      body,
+      p,
+      span {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .marquee {
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+      }
+      .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 12s linear infinite;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      /* Balon animasi */
+      .balloon {
+        position: absolute;
+        bottom: -100px;
+        width: 30px;
+        height: 40px;
+        background: rgba(255, 0, 0, 0.6);
+        border-radius: 50%;
+        animation: float 8s linear infinite;
+      }
+      #balloons {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* biar ga ganggu klik */
+        z-index: 5; /* di atas background, tapi di bawah konten utama */
+        overflow: hidden;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-120vh) scale(1.2);
+          opacity: 0;
+        }
+      }
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+      }
+
+      .fade-out {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
+      .fade-out.hide {
+        opacity: 0;
+      }
+      @keyframes bounce-gentle {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+      .animate-bounce-gentle {
+        animation: bounce-gentle 2s infinite;
+      }
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 204, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 204, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.6);
+        }
+        100% {
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 204, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.4);
+        }
+      }
+
+      .glow {
+        animation: glow 2s infinite alternate;
+      }
+      .hover-glow:hover {
+        box-shadow: 0 0 20px rgba(255, 0, 100, 0.7);
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .spin {
+        animation: spin 2s linear infinite;
+      }
+      /* Glow lembut untuk tombol */
+      @keyframes glowPulse {
+        0% {
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 204, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 204, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 204, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+      }
+      .glow-btn {
+        animation: glowPulse 2.5s infinite alternate;
+      }
+
+      /* Mouse scroll animation */
+      .mouse-animation {
+        position: relative;
+      }
+      .scroll-animation {
+        animation: scrollDown 1.5s infinite;
+      }
+      @keyframes scrollDown {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(12px);
+          opacity: 0;
+        }
+      }
+      /* Floating animation for love icons */
+      @keyframes floatY {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+      .animate-float-slow {
+        animation: floatY 4s ease-in-out infinite;
+      }
+      .animate-float-fast {
+        animation: floatY 2.5s ease-in-out infinite;
+      }
+      /* Default (desktop) */
+#welcome {
+  background-image: url('assets/images/desktop.jpg');
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #welcome {
+    background-image: url('assets/images/mobile.jpg');
+  }
+}
