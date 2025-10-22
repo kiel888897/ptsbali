@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db.php';
+require_once '../db.php';
 // Query gabungan untuk total pemasukan
 $query = "
 SELECT 
