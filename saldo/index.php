@@ -29,9 +29,21 @@ $saldo = $total_pemasukan - $total_pengeluaran;
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saldo Kas Batak</title>
+    <title>Saldo Bona Taon Punguan Tuan Sihubil</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Panitia Bona Taon PTS" />
+    <meta name="author" content="KIEL" />
+    <meta
+        name="description"
+        content="Panitia Bona Taon PTS" />
+    <meta
+        name="keywords"
+        content="Panitia Bona Taon PTS" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -101,8 +113,10 @@ $saldo = $total_pemasukan - $total_pengeluaran;
         }
 
         .saldo-glow {
-            text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff3333, 0 0 40px #ff6666;
+            text-shadow: 0 0 6px #ff1a1a, 0 0 12px #ff3333, 0 0 24px #ff6666;
             animation: glowPulse 2s infinite alternate;
+            line-height: 1.2;
+            word-break: break-word;
         }
 
 
@@ -153,6 +167,17 @@ $saldo = $total_pemasukan - $total_pengeluaran;
                 text-shadow: 0 0 16px #ff3333, 0 0 32px #ff6666;
             }
         }
+
+        /* Responsif agar angka saldo tidak terpotong */
+        #saldoValue {
+            display: inline-block;
+            max-width: 90vw;
+            /* agar tidak melebihi lebar layar */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            font-size: clamp(2rem, 8vw, 5rem);
+            /* ukuran otomatis menyesuaikan layar */
+        }
     </style>
 </head>
 
@@ -185,7 +210,8 @@ $saldo = $total_pemasukan - $total_pengeluaran;
     <audio id="gongSound" src="gong_batak.mp3" preload="auto"></audio>
 
     <script>
-        const saldo = <?php echo $saldo; ?>;
+        //const saldo = <?php echo $saldo; ?>;
+        const saldo = 100000000000;
 
         function mulaiSaldo() {
             document.getElementById('startButton').classList.add('hidden');
