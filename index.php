@@ -97,7 +97,8 @@
             <a
                 class="inline-flex items-center gap-2 bg-transparent border border-white hover:bg-white hover:text-red-700 text-white font-semibold px-5 py-2 rounded-full shadow-lg transition glow-btn"
                 target="_blank"
-                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pesta%20Bona%20Taon%20Punguan%20Tuan%20Sihubil&details=Pesta%20Bona%20Taon%20Pungan%20Tuan%20Sihubil%20%7C%2015%20Maret%202026%20%7C%20Wisma%20PLN%20Bedugul,%20Bali%2080239%20%7C%2010.00%20WITA&dates=20250315T100000/20250316T140000&location=https://g.co/kgs/ArAcPos">
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pesta%20Bona%20Taon%20Tuan%20Sihubil&details=Pesta%20Bona%20Taon%20Tuan%20Sihubil%20%7C%2015%20Februari%202026%20%7C%20Pukul%2010.00%20WITA%20%E2%80%93%20Selesai%20%7C%20Jl.%20Raya%20Sesetan%20No.196,%20Sesetan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali%2080223&dates=20260215T100000/20260215T170000&location=Jl.%20Raya%20Sesetan%20No.196,%20Sesetan,%20Denpasar%20Selatan,%20Kota%20Denpasar,%20Bali%2080223">
+
                 <i class="fa-solid fa-calendar-check"></i> Save The Date
             </a>
 
@@ -193,7 +194,7 @@
             </p>
 
             <a
-                href="https://share.google/yNKRGCOk0fb9SecMn"
+                href="https://maps.app.goo.gl/DtFAVxz8cK7e5KnM6"
                 target="_blank"
                 class="inline-flex items-center gap-2 px-5 py-2 rounded-full shadow-lg bg-gradient-to-r from-red-600 to-pink-500 text-white font-semibold hover:scale-105 hover:from-pink-600 hover:to-red-500 transition-all duration-300 ease-in-out">
                 <i class="fa-solid fa-map-location-dot text-lg animate-bounce"></i>
