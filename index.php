@@ -189,11 +189,11 @@
             <p class="mb-2 text-lg text-white text-shadow">📅 Tanggal: 15 Februari 2026</p>
             <p class="mb-2 text-lg text-white text-shadow">⏰ Pukul: 10.00 WITA – Selesai</p>
             <p class="mb-6 text-lg text-white text-shadow">
-                📍 Lokasi: alamat, Denpasar, Bali 82191
+                📍 Lokasi: Jl. Raya Sesetan No.196, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223
             </p>
 
             <a
-                href="https://maps.app.goo.gl/paQrzmSpGWjHwce59"
+                href="https://share.google/yNKRGCOk0fb9SecMn"
                 target="_blank"
                 class="inline-flex items-center gap-2 px-5 py-2 rounded-full shadow-lg bg-gradient-to-r from-red-600 to-pink-500 text-white font-semibold hover:scale-105 hover:from-pink-600 hover:to-red-500 transition-all duration-300 ease-in-out">
                 <i class="fa-solid fa-map-location-dot text-lg animate-bounce"></i>
@@ -272,9 +272,9 @@
     <!-- RSVP Section -->
     <section id="rsvp" class="py-16 hidden">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-4xl font-sacramento font-bold text-white mb-6 text-shadow">Sumbangan Sukarela</h2>
+            <h2 class="text-4xl font-sacramento font-bold text-white mb-6 text-shadow">Tok-tok ripe & Sumbangan</h2>
             <p class="max-w-3xl mx-auto text-white leading-relaxed mb-6 text-shadow">
-                Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan sumbangan sukarela, dapat melalui :
+                Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan sumbangan, dapat melalui :
             </p>
             <!-- Floating Love Animations -->
             <div class="relative mb-10">
@@ -325,33 +325,45 @@
             </div>
             <div class="flex justify-center">
                 <div
-                    class="bg-white border rounded-2xl shadow-lg p-6 max-w-md w-full text-center"
+                    class="relative border-0 rounded-2xl shadow-xl p-8 max-w-md w-full text-center overflow-hidden"
+                    style="background: linear-gradient(145deg, #0033A0 0%, #0057B8 100%); color: white;"
                     data-aos="fade-down"
                     data-aos-duration="1500">
+                    <!-- Efek cahaya halus -->
+                    <div class="absolute inset-0 bg-white opacity-10 blur-3xl pointer-events-none"></div>
+
                     <!-- Logo Bank -->
-                    <img src="assets/images/bri.png" class="mx-auto w-32 rounded mb-4" alt="BRI" />
+                    <img
+                        src="assets/images/mandiri1.png"
+                        class="relative mx-auto w-28 rounded-xl mb-5 drop-shadow-lg"
+                        alt="Logo Bank" />
 
                     <!-- Nomor Rekening -->
-                    <p class="text-gray-800 font-medium text-lg mb-1">
+                    <p class="relative text-white font-medium text-lg mb-2 tracking-wide">
                         No. Rekening:
-                        <span id="rekening" class="font-bold text-red-700">036801059546508</span>
+                        <span id="rekening" class="font-bold text-yellow-300 ml-1">1750004310370</span>
                     </p>
-                    <p class="text-gray-500 text-sm mb-4">
-                        a.n <span class="font-semibold">Sarah Andriani Putri</span> <br />
+
+                    <!-- Nama Pemilik -->
+                    <p class="relative text-blue-100 text-sm mb-6 leading-relaxed">
+                        a.n <span class="font-semibold text-white">Sartika Liliana Tampubolon</span><br />
                         (Bendahara Panitia Bona Taon)
                     </p>
 
                     <!-- Tombol Salin -->
                     <button
                         onclick="copyRekening()"
-                        class="bg-red-600 text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">
+                        class="relative bg-yellow-400 text-blue-900 font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-yellow-300 hover:scale-105 transition-transform duration-200">
                         <i class="fa-regular fa-copy mr-2"></i> Salin No. Rekening
                     </button>
 
                     <!-- Notifikasi kecil -->
-                    <p id="copyAlert" class="text-green-600 text-sm mt-3 hidden">✅ Nomor rekening berhasil disalin!</p>
+                    <p id="copyAlert" class="relative text-green-300 text-sm mt-4 hidden">
+                        ✅ Nomor rekening berhasil disalin!
+                    </p>
                 </div>
             </div>
+
         </div>
     </section>
     <hr />
