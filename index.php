@@ -44,7 +44,7 @@
 <body class="bg-gray-100">
     <!-- Background Music -->
     <audio id="bg-music" loop>
-        <source src="assets/music/sound.mp3" type="audio/mpeg" />
+        <source src="assets/music/gondang-uningan.mp3" type="audio/mpeg" />
     </audio>
 
     <!-- Welcome Page -->
@@ -258,6 +258,69 @@
                 <a href="assets/foto/2.jpg" data-fancybox="gallery" class="relative group">
                     <img
                         src="assets/foto/2.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/3.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/3.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/4.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/4.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/5.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/5.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/6.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/6.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/7.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/7.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/8.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/8.jpg"
+                        class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                    </div>
+                </a>
+                <a href="assets/foto/9.jpg" data-fancybox="gallery" class="relative group">
+                    <img
+                        src="assets/foto/9.jpg"
                         class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
                     <div
                         class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
