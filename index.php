@@ -309,18 +309,18 @@
                         <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
                     </div>
                 </a>
-                <a href="assets/foto/8.jpg" data-fancybox="gallery" class="relative group">
+                <a href="assets/foto/10.jpg" data-fancybox="gallery" class="relative group">
                     <img
-                        src="assets/foto/8.jpg"
+                        src="assets/foto/10.jpg"
                         class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
                     <div
                         class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                         <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
                     </div>
                 </a>
-                <a href="assets/foto/19.jpg" data-fancybox="gallery" class="relative group">
+                <a href="assets/foto/8.jpg" data-fancybox="gallery" class="relative group">
                     <img
-                        src="assets/foto/19.jpg"
+                        src="assets/foto/8.jpg"
                         class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
                     <div
                         class="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
