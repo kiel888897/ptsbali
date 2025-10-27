@@ -210,8 +210,8 @@ $saldo = $total_pemasukan - $total_pengeluaran;
     <audio id="gongSound" src="gong_batak.mp3" preload="auto"></audio>
 
     <script>
-        //const saldo = <?php echo $saldo; ?>;
-        const saldo = 100000000000;
+        const saldo = <?php echo $saldo; ?>;
+        // const saldo = 100000000000;
 
         function mulaiSaldo() {
             document.getElementById('startButton').classList.add('hidden');
