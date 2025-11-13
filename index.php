@@ -17,8 +17,8 @@
     <meta name="keywords" content="Bona Taon, Batak, Undangan, PTS Bali, Pesta Adat, Keluarga Batak, Denpasar" />
     <meta property="og:title" content="Undangan Bona Taon PTS 2026" />
     <meta property="og:description" content="Mari bersama menghadiri Pesta Bona Taon Punguan Tuan Sihubil se-Bali | 15 Februari 2026 di Denpasar." />
-    <meta property="og:image" content="https://https://ptsbali.online//assets/images/pinompar.png" />
-    <meta property="og:url" content="https://https://ptsbali.online//" />
+    <meta property="og:image" content="https://ptsbali.online//assets/images/pinompar.png" />
+    <meta property="og:url" content="https://ptsbali.online//" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -189,6 +189,7 @@
             <!-- Event Info -->
             <p class="mb-2 text-lg text-white text-shadow">📅 Tanggal: 15 Februari 2026</p>
             <p class="mb-2 text-lg text-white text-shadow">⏰ Pukul: 10.00 WITA – Selesai</p>
+            <p class="mb-2 text-lg text-white text-shadow">🏛️ Gedung Undiksha Denpasar</p>
             <p class="mb-6 text-lg text-white text-shadow">
                 📍 Lokasi: Jl. Raya Sesetan No.196, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80223
             </p>
